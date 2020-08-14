@@ -14,7 +14,7 @@ from .const import DATA_CLIENT, DATA_COORDINATOR, DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
 
-SCAN_INTERVAL = timedelta(seconds=20)
+SCAN_INTERVAL = timedelta(seconds=300)
 PARALLEL_UPDATES = 4
 
 
