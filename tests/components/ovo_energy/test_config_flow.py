@@ -108,7 +108,8 @@ async def test_reauth_authorization_error(hass: HomeAssistant) -> None:
         assert result["step_id"] == "reauth"
 
         result2 = await hass.config_entries.flow.async_configure(
-            result["flow_id"], FIXTURE_REAUTH_INPUT,
+            result["flow_id"],
+            FIXTURE_REAUTH_INPUT,
         )
         await hass.async_block_till_done()
 
@@ -131,7 +132,8 @@ async def test_reauth_connection_error(hass: HomeAssistant) -> None:
         assert result["step_id"] == "reauth"
 
         result2 = await hass.config_entries.flow.async_configure(
-            result["flow_id"], FIXTURE_REAUTH_INPUT,
+            result["flow_id"],
+            FIXTURE_REAUTH_INPUT,
         )
         await hass.async_block_till_done()
 
@@ -167,7 +169,8 @@ async def test_reauth_flow(hass: HomeAssistant) -> None:
         return_value=FIXTURE_USER_INPUT[CONF_USERNAME],
     ):
         result2 = await hass.config_entries.flow.async_configure(
-            result["flow_id"], FIXTURE_REAUTH_INPUT,
+            result["flow_id"],
+            FIXTURE_REAUTH_INPUT,
         )
         await hass.async_block_till_done()
 
