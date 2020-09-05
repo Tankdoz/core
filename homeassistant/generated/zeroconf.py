@@ -163,5 +163,6 @@ HOMEKIT = {
     "Welcome": "netatmo",
     "Wemo": "wemo",
     "iSmartGate": "gogogate2",
+    "YT4910WF4011": "lyric",
     "tado": "tado"
 }

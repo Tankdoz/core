@@ -104,6 +104,7 @@ FLOWS = [
     "locative",
     "logi_circle",
     "luftdaten",
+    "lyric",
     "mailgun",
     "melcloud",
     "met",
